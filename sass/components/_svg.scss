@@ -35,12 +35,9 @@
 /*Особливості-SVG*/
 
 .features__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 270px;
     height: 120px;
-    background-color: var(--team-section-color);
+    background-color: $team-section-color;
     border-radius: 4px;
     margin-bottom: 30px;
 }
@@ -48,40 +45,32 @@
 /*Наша команда svg*/
 
 .social-list {
-    display: flex;
-    justify-content: center;
     margin-top: 16px;
 }
 
-.section__list .social-list__item {
+.social-list__item {
     width: 44px;
     height: 44px;
-    background-color: var(--page-color);
+    background-color: $page-color;
     margin-right: 10px;
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+    background-color: $accent-color;}
+    &:last-child {
+            margin-right: 0;
+    }
 
-.social-list__item:last-child {
-    margin-right: 0;
-}
-
-.social-list__item:hover {
-    background-color: var(--accent-color);
 }
 
 .social-list__links {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: var(--links-stroke-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    fill: $links-stroke-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+    fill: $page-color;
 }
-
-.social-list__links:hover {
-    fill: var(--page-color);
 }
 
 /*Клієнти-SVG*/
@@ -94,43 +83,28 @@
     width: 170px;
     height: 92px;
     margin-right: 30px;
-    border: 1px solid var(--links-stroke-color);
+    border: 1px solid $links-stroke-color;
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.clients__item:hover {
-    border-color: var(--accent-color);
-}
-
-.clients__item:focus {
-    border-color: var(--accent-color);
-}
-
-.clients__item:last-child {
-    margin-right: 0;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+    border-color: $accent-color;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .clients__link {
-    border-color: var(--links-stroke-color);
-    fill: var(--links-stroke-color);
-    display: flex;
+    border-color: $links-stroke-color;
+    fill: $links-stroke-color;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
 }
-
-.clients__link:hover {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-}
-
-.clients__link:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
 }
 
 /*Футер svg*/
@@ -140,7 +114,7 @@
 }
 
 .footer-social__title {
-    color: var(--page-color);
+    color: $page-color;
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 700;
@@ -157,25 +131,20 @@
 .footer-social__item {
     width: 44px;
     height: 44px;
-    background-color: var(--footer-icon-color);
+    background-color: $footer-icon-color;
     margin-right: 10px;
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.footer-social__item:last-child {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            background-color: $accent-color;
+        }
+    &:last-child {
     margin-right: 0;
-}
-
-.footer-social__item:hover {
-    background-color: var(--accent-color);
+    }
 }
 
 .footer-social__links {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: var(--page-color);
+    fill: $page-color;
 }

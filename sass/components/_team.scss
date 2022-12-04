@@ -1,11 +1,11 @@
 /*Наша команда*/
 
 .team {
-    background-color: var(--team-section-color);
+    background-color: $team-section-color;
 }
 
 .team-list {
-    background-color: var(--page-color);
+    background-color: $page-color;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -19,7 +19,7 @@
 }
 
 .team-list__name {
-    color: var(--title-text-color);
+    color: $title-text-color;
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 500;

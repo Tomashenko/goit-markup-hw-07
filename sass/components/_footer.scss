@@ -1,9 +1,13 @@
 /*footer*/
 
 .contact-section {
-    background-color: var(--section-color);
+    background-color: $section-color;
     padding-top: 60px;
     padding-bottom: 60px;
+    .logo {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
 }
 
 .footer-connect {
@@ -11,13 +15,8 @@
     align-items: baseline;
 }
 
-.contact-section .logo {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
 .logo--white {
-    color: var(--page-color);
+    color: $page-color;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
@@ -31,33 +30,27 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-bottom: 9px;
-}
-
-.link-footer:last-child {
-    margin-bottom: 0;
-    display: inline-block;
-}
+    &:last-child {
+            margin-bottom: 0;
+            display: inline-block;
+}}
 
 .link-footer__address {
-    color: var(--page-color);
+    color: $page-color;
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.link-footer__address:hover,
-.link-footer__address:focus {
-    color: var(--accent-color)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+            color: $accent-color;
+        }
 }
 
 .link-footer__connect {
-    color: var(--connect-color);
+    color: $connect-color;
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+    color: $accent-color;
 }
-
-.link-footer__connect:hover,
-.link-footer__connect:focus {
-    color: var(--accent-color)
 }
 
 .footer-subscribe {
@@ -65,7 +58,7 @@
 }
 
 .footer-subscribe__title {
-    color: var(--page-color);
+    color: $page-color;
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 700;
@@ -85,11 +78,11 @@
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: var(--section-color);
+    background-color: $section-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--page-color);
+    color: $page-color;
     outline: none;
 }
 
@@ -98,12 +91,9 @@
 }
 
 .footer-subscribe__button {
-    display: flex;
-    color: var(--page-color);
-    background-color: var(--accent-color);
+    color: $page-color;
+    background-color: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    align-items: center;
-    justify-content: center;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
