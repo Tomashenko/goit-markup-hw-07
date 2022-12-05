@@ -6,6 +6,11 @@
 
 .work-item {
     position: relative;
+    margin-right: 30px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
 }
 
 .work-item__label {
